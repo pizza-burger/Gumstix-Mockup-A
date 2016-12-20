@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Gumstix Mock-Up A</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<!-- Latest compiled JavaScript for Bootstrap-->
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<style>
+		.navbar-brand {
+			padding: 10px
+		}
+		
+		.content-panel
+		{
+			padding: 40px;
+			height: 700px;
+		}
+		
+		#main-column,
+		.content-panel
+		{
+			background-color: lightblue;
+		}
+	</style>
+	
+	<link rel="stylesheet" href="navbar-collapse.css"></link>
+
+</head>
+
+<body>
+	<!-- Navigation Bar, fixed and placed on top -->
+	<nav class="navbar navbar-default navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>                        
+				</button>
+				<a class="navbar-brand" href="index.html"><img alt="Gumstix" src="img/banner-logo-edit.png"></a>
+			</div>
+			<div class="collapse navbar-collapse" id="mainNavbar">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#">Home</a></li>
+					<li class=""><a href="#">Products &amp; Software</a></li>
+					<li class=""><a href="#">Support</a></li>
+					<li class=""><a href="#">About</a></li>
+				</ul>
+				
+				<!-- Items on the navigation bar, right-aligned -->
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#"><span class="glyphicon glyphicon-user"></span> Account</a></li>
+					<li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+		<!-- Main Column -->
+	<div class="container-fluid" id="main-column">
+		<div class="container-fluid content-panel" id="first-panel">
+			<h1>Heading</h1>
+			<p>Some text.</p>
+		</div>
+	</div>
+
+</body>
+</html>
