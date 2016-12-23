@@ -6,30 +6,20 @@
 	<meta charset="UTF-8">
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<!-- Font Awesome -->
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<!-- Social Media Buttons -->
+	<link rel="stylesheet" href="bootstrap-social-gh-pages/css/bootstrap-social.min.css">
 	<!-- jQuery library -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 	<!-- Latest compiled JavaScript for Bootstrap-->
 	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
 	<style>
-		.navbar-brand {
-			padding: 10px
-		}
-		
-		.content-panel
-		{
-			padding: 40px;
-			height: 700px;
-		}
-		
-		#main-column,
-		.content-panel
-		{
-			background-color: lightblue;
-		}
+
 	</style>
-	
 	<link rel="stylesheet" href="navbar-collapse.css"></link>
+	<link rel="stylesheet" href="css/styles.css"></link>
 
 </head>
 
@@ -39,33 +29,86 @@
 		<div class="container-fluid">
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNavbar">
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>                        
+					<i class="fa fa-bars" aria-hidden="true"></i>                        
 				</button>
 				<a class="navbar-brand" href="index.html"><img alt="Gumstix" src="img/banner-logo-edit.png"></a>
 			</div>
 			<div class="collapse navbar-collapse" id="mainNavbar">
 				<ul class="nav navbar-nav">
-					<li class="active"><a href="#">Home</a></li>
-					<li class=""><a href="#">Products &amp; Software</a></li>
+					<li class="active"><a href="index.html">Home</a></li>
+					<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" role="button" href="#">Products &amp; Software <span class="caret"></span></a>
+						<ul class="dropdown-menu" role="menu">
+							<li class="dropdown-submenu">
+								<a tabindex="-1" class="dropdown-toggle" data-toggle="dropdown" href="#">Geppetto</a>
+								<ul class="dropdown-menu">
+									<li><a href="#">Meet Geppetto</a></li>
+									<li><a href="#">Features</a></li>
+									<li><a href="#">Knowledge Base</a></li>
+									<li class="divider"></li>
+									<li><a href="#">Launch Geppetto</a></li>
+								</ul>
+							</li>
+							<li class="divider"></li>
+							<li><a href="#">Supported Software</a></li>
+							<li><a href="#">Software Downloads</a></li>
+							<li><a href="#">Warranty and Shipping</a></li>
+						</ul>
+					</li>
 					<li class=""><a href="#">Support</a></li>
-					<li class=""><a href="#">About</a></li>
+					<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" role="button" href="#">About <span class="caret"></a>
+						<ul class="dropdown-menu">
+							<li><a href="#">About Us</a></li>
+							<li><a href="#">Contact Us</a></li>
+							<li><a href="#">Blog</a></li>
+							<li><a href="#">In the News</a></li>
+							<li><a href="#">Employment Opportunities</a></li>
+						</ul>
+					</li>
 				</ul>
 				
 				<!-- Items on the navigation bar, right-aligned -->
 				<ul class="nav navbar-nav navbar-right">
-					<li><a href="#"><span class="glyphicon glyphicon-user"></span> Account</a></li>
-					<li><a href="#"><span class="glyphicon glyphicon-shopping-cart"></span> Cart</a></li>
+					<li><a class="dropdown-toggle" data-toggle="dropdown" role="button" href="#"><i class="fa fa-user" aria-hidden="true"></i> Account</a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Profile</a></li>
+							<li><a href="#">Orders</a></li>
+							<li class="divider"></li>
+							<li><a href="#">Sign Out</a></li>
+						</ul>
+					</li>
+					<li><a href="#"><i class="fa fa-shopping-cart" aria-hidden="true"></i> Cart</a></li>
 				</ul>
 			</div>
 		</div>
 	</nav>
-		<!-- Main Column -->
-	<div class="container-fluid" id="main-column">
+	<!-- Content -->
+	<div class="" id="main-column">
+		<!-- First Panel: contains main/important information -->
 		<div class="container-fluid content-panel" id="first-panel">
-			<h1>Heading</h1>
-			<p>Some text.</p>
+			<div id="first-panel-text">
+				<h1 class="">Acccelerate your journey from prototype to market</h1>
+				<p>With Geppetto D20<sup>&reg;</sup>, you can Design and Order today and get a finished product in just 15 days.</p>
+				<button class="btn btn-primary btn-lg">Try Geppetto for Free</button>
+			</div>
+		</div>
+		
+		<!-- Second Panel: additional information -->
+		<div class="container-fluid content-panel" id="second-panel">
+			<div id="second-panel-text">
+				<h1 class="h2">Efficient Design-to-Order System to speed up production</h1>
+				<p>See what our customers have to say about us. </p>
+				<button class="btn btn-primary btn-lg">See Customer Feedback</button>
+			</div>
+		</div>
+	</div>
+	
+	<!-- Footer -->
+	<div class="container-fluid" id="footer">
+		<div class="container" id="links">
+			<a href="#">Terms of Use </a>&middot;
+			<a href="#">Legal </a>&middot;
+			<a href="#">Copyright </a>&middot;
+			<a href="#">Sitemap </a>
 		</div>
 	</div>
 
